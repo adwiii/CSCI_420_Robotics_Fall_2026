@@ -24,7 +24,7 @@ Developing software for robot systems is challenging as they must sense, represe
 * Teaching Assistant TBD
 
 # Prerequisites
-CSCI 303 and/or CSCI 304 are recommended. Robotics lives at the intersection of many different disciplines. If you are concerned about your preparedness, schedule a meeting with the instructor.
+CSCI 303 and/or CSCI 304 are recommended. Robotics lives at the intersection of many different disciplines. This course assumes a working familiarity with Python. We will cover basic elements of necessary algorithms and concurrent programming; students should be prepared to self-study these materials in more depth if necessary. If you are concerned about your preparedness, schedule a meeting with the instructor.
 
 
 # Tentative Schedule
