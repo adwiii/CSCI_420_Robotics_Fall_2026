@@ -29,24 +29,24 @@ CSCI 303 and/or CSCI 304 are recommended. Robotics lives at the intersection of 
 
 # Tentative Schedule
 
-| Week | Lecture Date | Lecture Topic                                   | Lab Date   | Lab # | Lab Topic                                                       |
-|------|--------------|-------------------------------------------------|------------|-------|-----------------------------------------------------------------|
-| 1    | 8/27/2026    | Intro + Quiz 0                                  | N/A        | N/A   | N/A                                                             |
-| 2    | 9/1/2026     | Distinguishing Development Features + Quiz 1    | 9/3/2026   | 1     | ⭐ Setting up ROS                                           |
-| 3    | 9/8/2026     | Software Machinery + Quiz 2                     | 9/10/2026  | 2     | ⭐ ROS                                                      |
-| 4    | 9/15/2026    | Sensors & Noise Management + Quiz 3             | 9/17/2026  | 3     | Types & Machines                                                |
-| 5    | 9/22/2026    | LLMs in Robotics + Quiz 4              | 9/24/2026  | N/A   | ***Guest Speaker***                                             |
-| 6    | 9/29/2026    | _(No Class or Office Hours; Instructor Travel)_ | 10/1/2026  | 4     | Sensors & Noise _(No Class or Office Hours; Instructor Travel)_ |
-| 7    | 10/6/2026    | Abstractions & Perception + Quiz 5                      | 10/8/2026  | N/A   | _(No Class; Fall Break)_                                        |
-| 8    | 10/13/2026   | Controlling your Robot + Quiz 6                 | 10/15/2026 | N/A   | ***Midterm Exam***                                              |
-| 9    | 10/20/2026   | Tradeoffs in Planning + Quiz 7                  | 10/22/2026 | 5     | Perception                                                      |
-| 10   | 10/27/2026   | Graph Navigation + Quiz 8                       | 10/29/2026 | 6     | ⭐ Ethics _(Interactive Lab)_                               |
-| 11   | 11/3/2026    | _(No Class; Election Day)_                      | 11/5/2026  | 7     | Planning                                                        |
-| 12   | 11/10/2026   | Coordinates & Transformations + Quiz 9          | 11/12/2026 | 8     | Pose Transformations                                            |
-| 13   | 11/17/2026   | Specs, V&V, Safety + Quiz 10                    | 11/19/2026 | 9     | ⭐ Specifying Robots _(Interactive Lab)_                    |
-| 14   | 11/24/2026   | Project Work (Remote Office Hours)              | 11/26/2026 | N/A   | _(No Class; Thanksgiving Break)_                                |
-| 15   | 12/1/2026    | Robot Design + Quiz 11                          | 12/3/2026  | N/A   | Wrap up & exam/project prep                                     |
-| 16   | 12/7/2026    | ***Final Exam*** 2pm-5pm, location TBD          |            |       | Congrats on completing another semester!                        |
+| Week | Lecture Date | Lecture Topic                                   | Quiz # | Quiz Topic                | Lab Date                                 | Lab # | Lab Topic                                                       |
+|------|--------------|-------------------------------------------------|--------|---------------------------|------------------------------------------|-------|-----------------------------------------------------------------|
+| 1    | 8/27/2026    | Intro                                           | 0      | Taking Stock (not graded) |                                          |       |                                                                 |                                                             |
+| 2    | 9/1/2026     | Distinguishing Development Features             | 1      | Thinking about robots I   | 9/3/2026                                 | 1     | ⭐ Setting up ROS                                               |
+| 3    | 9/8/2026     | Software Machinery                              | 2      | Thinking about robots II  | 9/10/2026                                | 2     | ⭐ ROS                                                          |
+| 4    | 9/15/2026    | Sensors & Noise Management                      | 3      | State Machines            | 9/17/2026                                | 3     | Types & Machines                                                |
+| 5    | 9/22/2026    | LLMs in Robotics                                | 4      | Sensors & Noise           | 9/24/2026                                |       | ***Guest Speaker***                                             |
+| 6    | 9/29/2026    | _(No Class or Office Hours; Instructor Travel)_ |        |                           | 10/1/2026                                | 4     | Sensors & Noise _(No Class or Office Hours; Instructor Travel)_ |
+| 7    | 10/6/2026    | Abstractions & Perception                       | 5      | TBD                       | 10/8/2026                                |       | _(No Class; Fall Break)_                                        |
+| 8    | 10/13/2026   | Controlling your Robot                          | 6      | Perceptions & Abstraction | 10/15/2026                               |       | ***Midterm Exam***                                              |
+| 9    | 10/20/2026   | Tradeoffs in Planning                           | 7      | Controls I                | 10/22/2026                               | 5     | Perception                                                      |
+| 10   | 10/27/2026   | Graph Navigation                                | 8      | Controls II               | 10/29/2026                               | 6     | ⭐ Ethics _(Interactive Lab)_                                   |
+| 11   | 11/3/2026    | _(No Class; Election Day)_                      |        |                           | 11/5/2026                                | 7     | Planning                                                        |
+| 12   | 11/10/2026   | Coordinates & Transformations                   | 9      | Graph Navigation          | 11/12/2026                               | 8     | Pose Transformations                                            |
+| 13   | 11/17/2026   | Specs, V&V, Safety                              | 10     | Coordinate Transforms I   | 11/19/2026                               | 9     | ⭐ Specifying Robots _(Interactive Lab)_                        |
+| 14   | 11/24/2026   | Project Work (Remote Office Hours)              |        |                           | 11/26/2026                               |       | _(No Class; Thanksgiving Break)_                                |
+| 15   | 12/1/2026    | Robot Design                                    | 11     | TBD                       | 12/3/2026                                |       | Wrap up & exam/project prep                                     |
+| 16   | 12/7/2026    | ***Final Exam*** 2pm-5pm, location TBD          |        |                           | Congrats on completing another semester! |
 
 ## Important Dates:
 * Add/drop deadline: September 4
