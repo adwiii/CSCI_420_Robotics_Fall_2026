@@ -35,9 +35,9 @@ CSCI 303 and/or CSCI 304 are recommended. Robotics lives at the intersection of 
 | 2    | 9/1/2026     | Distinguishing Development Features + Quiz 1    | 9/3/2026   | 1     | ⭐ Setting up ROS                                           |
 | 3    | 9/8/2026     | Software Machinery + Quiz 2                     | 9/10/2026  | 2     | ⭐ ROS                                                      |
 | 4    | 9/15/2026    | Sensors & Noise Management + Quiz 3             | 9/17/2026  | 3     | Types & Machines                                                |
-| 5    | 9/22/2026    | Abstractions & Perception + Quiz 4              | 9/24/2026  | N/A   | ***Guest Speaker***                                             |
+| 5    | 9/22/2026    | LLMs in Robotics + Quiz 4              | 9/24/2026  | N/A   | ***Guest Speaker***                                             |
 | 6    | 9/29/2026    | _(No Class or Office Hours; Instructor Travel)_ | 10/1/2026  | 4     | Sensors & Noise _(No Class or Office Hours; Instructor Travel)_ |
-| 7    | 10/6/2026    | LLMs in Robotics  + Quiz 5                      | 10/8/2026  | N/A   | _(No Class; Fall Break)_                                        |
+| 7    | 10/6/2026    | Abstractions & Perception + Quiz 5                      | 10/8/2026  | N/A   | _(No Class; Fall Break)_                                        |
 | 8    | 10/13/2026   | Controlling your Robot + Quiz 6                 | 10/15/2026 | N/A   | ***Midterm Exam***                                              |
 | 9    | 10/20/2026   | Tradeoffs in Planning + Quiz 7                  | 10/22/2026 | 5     | Perception                                                      |
 | 10   | 10/27/2026   | Graph Navigation + Quiz 8                       | 10/29/2026 | 6     | ⭐ Ethics _(Interactive Lab)_                               |
