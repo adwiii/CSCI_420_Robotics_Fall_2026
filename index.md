@@ -90,6 +90,7 @@ CSCI 303 and/or CSCI 304 are recommended. Robotics lives at the intersection of 
   * The free Timely Care app, which gives students access to 24-7 remote counseling support. Information about the Timely care app can be found through http://timelycare.com/wm
 
 # Tentative Grade Distribution
+_Note: Grades for all assignments will be posted in Blackboard. However, Blackboard cannot calculate the total grade formula. Reach out to the teaching staff if you have any questions about your current total grade._
 * 9 Labs: 40 points; lowest 2 labs will be counted at half weight, but labs marked with ⭐ will count full. 7 labs at 5 points each + 2 labs at 2.5 each.
 * 1 Midterm: 10 points
 * 1 Final: 35 points; combines written final with final project. Higher of the two will be weighted 25 points, lower will be weighted 10 points.  
