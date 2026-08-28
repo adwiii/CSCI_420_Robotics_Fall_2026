@@ -1,7 +1,8 @@
 - name: Lectures
   link: /#
   dropdown:
-    - name: Coming Soon!
+    - name: 1 - Introduction
+      link: /lectures/lecture1/
 - name: Labs
   link: /#
   dropdown:
