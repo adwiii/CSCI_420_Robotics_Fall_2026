@@ -7,7 +7,7 @@ layout: page
 # Team
  
 * Trey Woodlief - Instructor, woodlief@wm.edu
-* Teaching Assistant TBD
+* Yili Bai - Teaching Assistant, ybai07@wm.edu
 
 
 # Goal and Scope
@@ -21,7 +21,7 @@ Developing software for robot systems is challenging as they must sense, represe
 
 # Office Hours
 * Trey Woodlief: Mondays 2-4pm, Wednesdays 10am-12pm, ISC 2317. Online meetings or other times available by appointment. 
-* Teaching Assistant TBD
+* Yili Bai: Tuesdays 12:30-1:30pm, ISC 2398
 
 # Prerequisites
 CSCI 303 and/or CSCI 304 are recommended. Robotics lives at the intersection of many different disciplines. This course assumes a working familiarity with Python. We will cover basic elements of necessary algorithms and concurrent programming; students should be prepared to self-study these materials in more depth if necessary. If you are concerned about your preparedness, schedule a meeting with the instructor.
