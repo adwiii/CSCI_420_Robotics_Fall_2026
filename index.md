@@ -1,5 +1,5 @@
 ---
-title: Robotics 
+title: Robotics - Syllabus
 subtitle: CSCI 420 - Fall 2026
 layout: page
 ---
@@ -12,18 +12,39 @@ layout: page
 
 # Goal and Scope
 
-Developing software for robot systems is challenging as they must sense, represent, and actuate in the physical world. Sensing the physical world is usually noisy, the knowledge and representation of the world is incomplete and uncertain, and actuating in and on the world is often inaccurate. In this class, we will explore software engineering approaches to cope with those challenges. You will learn to use domain-specific abstractions, architectures, libraries, and validation approaches and tools to safely perform robot activities like motion, navigation, perception, planning, and interaction. The expectation is that this course will open up new career options in robotics for our students. The course requires no prior knowledge of robotics.
+Developing software for robot systems is challenging as they must sense, represent, and actuate in the physical world.
+Sensing the physical world is usually noisy, the knowledge and representation of the world is incomplete and uncertain, and actuating in and on the world is often inaccurate.
+In this class, we will explore software engineering approaches to cope with those challenges.
+You will learn to use domain-specific abstractions, architectures, libraries, and validation approaches and tools to safely perform robot activities like motion, navigation, perception, planning, and interaction.
+The expectation is that this course will open up new career options in robotics for our students.
+The course requires no prior knowledge of robotics.
+
+## Learning Objectives
+
+By the end of the course, students will be able to:
+1. understand and explain the core differences between traditional computing and robot systems, including the sense, compute, act paradigm (Apply Core Principles of Computer Science).
+2. create and explain working examples demonstrating each part of the robot pipeline: sensors & noise handling, perception and world modeling, planning, and controls (Design and Implement Complex Computing Systems).
+3. apply strategies to analyze and utilize time-series sensor data for debugging and core robotics algorithms including Kalman filters and PID control (Analyze, Interpret, and Manage Data).
+4. effectively communicate design choices and implementation details within complex robot systems (Communicate and Collaborate Effectively).
+5. apply robot architecture design principles in industry-class robotics infrastructure, ROS, including publish-subscribe, service calls, and the use of complex, physical world-based object types (Apply Core Principles of Computer Science).
+6. analyze the ethical considerations of robots and autonomous systems deployed in society (Integrate Human-Centered and Ethical Design).
+7. create and evaluate specifications for robot systems operating in the physical world, including safety considerations (Integrate Human-Centered and Ethical Design).  
+8. create an end-to-end robot system to solve a "real-world" problem autonomously (Design and Implement Complex Computing Systems).
+9. identify and explain the use of robotics in everyday life and considerations for deploying robots in new contexts (Demonstrate Professionalism and Lifelong Learning).
 
 # Class location and time
+
 * Tuesday and Thursday from 11:00AM to 12:20PM 
 * Classes will be in person at ISC 0248, with most lectures on Tuesdays and labs on Thursdays
   * Allow yourself extra time to get to the classroom. Note that not all sections of ISC are connected on every floor.
 
 # Office Hours
+
 * Trey Woodlief: Mondays 2-4pm, Wednesdays 10am-12pm, ISC 2317. Online meetings or other times available by appointment. 
 * Yili Bai: Tuesdays 12:30-1:30pm, ISC 2398
 
 # Prerequisites
+
 CSCI 303 and/or CSCI 304 are recommended. Robotics lives at the intersection of many different disciplines. This course assumes a working familiarity with Python. We will cover basic elements of necessary algorithms and concurrent programming; students should be prepared to self-study these materials in more depth if necessary. If you are concerned about your preparedness, schedule a meeting with the instructor.
 
 
@@ -49,6 +70,7 @@ CSCI 303 and/or CSCI 304 are recommended. Robotics lives at the intersection of 
 | 16   | 12/7/2026    | ***Final Exam*** 2pm-5pm, location TBD          |        |                           | Congrats on completing another semester! |
 
 ## Important Dates:
+
 * Add/drop deadline: September 4
 * Withdrawal period begins: September 5
 * Labor day (no office hours): September 7
@@ -90,6 +112,7 @@ CSCI 303 and/or CSCI 304 are recommended. Robotics lives at the intersection of 
   * The free Timely Care app, which gives students access to 24-7 remote counseling support. Information about the Timely care app can be found through http://timelycare.com/wm
 
 # Tentative Grade Distribution
+
 _Note: Grades for all assignments will be posted in Blackboard. However, Blackboard cannot calculate the total grade formula. Reach out to the teaching staff if you have any questions about your current total grade._
 * 9 Labs: 40 points; lowest 2 labs will be counted at half weight, but labs marked with ⭐ will count full. 7 labs at 5 points each + 2 labs at 2.5 each.
 * 1 Midterm: 10 points
@@ -116,10 +139,10 @@ _Note: Grades for all assignments will be posted in Blackboard. However, Blackbo
 
 # FAQ
  * **Is this course for me?**
-   * This is a class for students who have no or limited experience in  robotics but are interested in learning more about how we develop systems that interact with the physical world. Note that the material and schedule is likely to be tweaked as the course evolves, so you need to be comfortable taking an exploratory class with us.
+   * This is a class for students who have no or limited experience in  robotics but are interested in learning more about how we develop systems that interact with the physical world.
  * **What is this course NOT about?**
-   * This class is not about AI (though we will touch on it briefly in a few sections), mechanical design, or electronic design. It is mainly about how to build software that will operate mobile robots in the physical world.
+   * This class is not about AI (though we will explore its usage in robotics), mechanical design, or electronic design. It is mainly about how to build software that will operate mobile robots in the physical world.
  * **What is the structure of the course?**
    * This class will include multiple development labs, a team project, quizzes, and a written midterm and final exam. 
  * **What robot will be used?** 
-   * Drones, all in simulation. Our focus is on the software.
+   * Drones, all in simulation. Our focus is on the software. If you would like hands-on experience with a robot, talk with the instructor to set up time to come by the research lab!
