@@ -117,7 +117,7 @@ For more examples and ideas, visit:
 Open a new terminal on your host machine and enter the following commands to download the Docker image instructions (the [`Dockerfile`](https://docs.docker.com/glossary/#dockerfile)):
 ```bash
 cd ~  # You will need to access this repository every time we work on a lab, so choose a convenient place
-git clone https://github.com/adwiii/csci-420-robotics-docker.git
+git clone https://github.com/BeeSafeRobotics/csci-420-robotics-docker.git
 ```
 
 Next, clone the class repository and build the container:
@@ -127,7 +127,7 @@ git clone https://github.com/BeeSafeRobotics/csci_420_robotics_labs_f26_f26.git
 docker compose up --build -d
 ```
 
-The `docker compose up --build -d` command looks in the [`docker compose.yml`](https://github.com/adwiii/csci-420-robotics-docker/blob/main/docker_compose.yml)
+The `docker compose up --build -d` command looks in the [`docker compose.yml`](https://github.com/BeeSafeRobotics/csci-420-robotics-docker/blob/main/docker_compose.yml)
 file that specifies both how to build the image using the `Dockerfile` and how to run the image to get a working container.
 
 Breaking down the command:
