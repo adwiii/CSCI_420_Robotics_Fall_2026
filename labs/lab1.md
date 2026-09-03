@@ -123,7 +123,7 @@ git clone https://github.com/adwiii/csci-420-robotics-docker.git
 Next, clone the class repository and build the container:
 ```bash
 cd ~/csci_420_robotics_docker  # edit the location if you did not clone the repository to ~ during Docker Setup
-git clone https://github.com/adwiii/csci_420_robotics_labs.git
+git clone https://github.com/BeeSafeRobotics/csci_420_robotics_labs_f26_f26.git
 docker compose up --build -d
 ```
 
@@ -273,13 +273,13 @@ Let's assume we have been given the software used to fly a rocket to the moon. T
 </div>
 
 ## Downloading the Code
-Throughout the semester the teaching staff will be adding the labs to the [lab GitHub repository](https://github.com/adwiii/csci_420_robotics_labs) during the week the lab is assigned.
+Throughout the semester the teaching staff will be adding the labs to the [lab GitHub repository](https://github.com/BeeSafeRobotics/csci_420_robotics_labs_f26_f26) during the week the lab is assigned.
 Before each lab, you need to make sure the lab code is up-to-date. Within Docker, enter the following:
 
 ```bash
 # Change to labs directory. 
-# When you are working in the Docker container, the lab directory will always be ~/csci_420_robotics_labs
-cd ~/csci_420_robotics_labs
+# When you are working in the Docker container, the lab directory will always be ~/csci_420_robotics_labs_f26
+cd ~/csci_420_robotics_labs_f26
 # Pull the latest code
 git pull
 ```
@@ -297,7 +297,7 @@ In Terminal 1, run the following command:
 
 ```bash
 # Change the directory to the ROS workspace
-cd ~/csci_420_robotics_labs/lab1_ws/
+cd ~/csci_420_robotics_labs_f26/lab1_ws/
 # Build the code in this directory
 colcon build
 # Update your environment variables so that ROS knows where your workspace is
@@ -319,7 +319,7 @@ cd ~/csci_420_robotics_docker  # edit the location if you did not clone the repo
 # Connect to the Docker container
 docker compose exec ros bash
 # cd into the directory for the lab
-cd ~/csci_420_robotics_labs/lab1_ws
+cd ~/csci_420_robotics_labs_f26/lab1_ws
 # Update your environment variables so that ROS knows where your workspace is
 source install/setup.bash
 # Run the rocket-ship source code
@@ -335,7 +335,7 @@ cd ~/csci_420_robotics_docker  # edit the location if you did not clone the repo
 # Connect to the Docker container
 docker compose exec ros bash
 # cd into the directory for the lab
-cd ~/csci_420_robotics_labs/lab1_ws
+cd ~/csci_420_robotics_labs_f26/lab1_ws
 # Update your environment variables so that ROS knows where your workspace is
 source install/setup.bash
 # Run the rocket-ship source code
@@ -357,7 +357,7 @@ cd ~/csci_420_robotics_docker  # edit the location if you did not clone the repo
 # Connect to the Docker container
 docker compose exec ros bash
 # cd into the directory for the lab
-cd ~/csci_420_robotics_labs/lab1_ws
+cd ~/csci_420_robotics_labs_f26/lab1_ws
 # Update your environment variables so that ROS knows where your workspace is
 source install/setup.bash
 # Run the rocket-ship source code
@@ -399,7 +399,7 @@ Using this information, we can start to understand some of the system organizati
 Having to run many different software components is common in robotics, but doing it manually by setting terminals as we have done is not practical, especially when deploying a system requires hundreds of processes to be run in specific ways.  Another way that ROS helps to address system complexity is by making it easier to deploy multiple software components through **launch files**.
 
 ### Editing files
-Let's create a launch file to run all the software components of our rocket. First, we will edit the base `rocket.launch` file provided to you. To do this, open the `csci_420_robotics_labs/lab1_ws/src` directory in your preferred IDE. Docker conveniently allows your Ubuntu machine and your host machine to both access the files directly. This means that you can either edit the files directly in Ubuntu, or we recommend using a full-fledged IDE such as [Visual Studio Code](https://code.visualstudio.com/) or [PyCharm](https://www.jetbrains.com/pycharm/) on your host machine. For PyCharm, you can use the community edition, or students are eligible for a [free Educational License](https://www.jetbrains.com/community/education/#students) that provides access to the full commercial suite for free.
+Let's create a launch file to run all the software components of our rocket. First, we will edit the base `rocket.launch` file provided to you. To do this, open the `csci_420_robotics_labs_f26/lab1_ws/src` directory in your preferred IDE. Docker conveniently allows your Ubuntu machine and your host machine to both access the files directly. This means that you can either edit the files directly in Ubuntu, or we recommend using a full-fledged IDE such as [Visual Studio Code](https://code.visualstudio.com/) or [PyCharm](https://www.jetbrains.com/pycharm/) on your host machine. For PyCharm, you can use the community edition, or students are eligible for a [free Educational License](https://www.jetbrains.com/community/education/#students) that provides access to the full commercial suite for free.
 
 Next, navigate to the `rocketship/launch/` directory and open the `rocket.launch` file. You will find an empty launch file with xml code as shown below:
 
@@ -429,7 +429,7 @@ cd ~/csci_420_robotics_docker  # edit the location if you did not clone the repo
 # Connect to the Docker container
 docker compose exec ros bash
 # cd into the directory for the lab
-cd ~/csci_420_robotics_labs/lab1_ws
+cd ~/csci_420_robotics_labs_f26/lab1_ws
 # build the workspace
 colcon build
 # Update your environment variables so that ROS knows where your workspace is
