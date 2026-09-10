@@ -7,6 +7,8 @@
       link: /lectures/lecture2/
     - name: 3 - Features of Software Development for Robots
       link: /lectures/lecture3/
+    - name: 3 (mini) - State Machines for Robots
+      link: /lectures/lecture3mini/
 - name: Labs
   link: /#
   dropdown:
