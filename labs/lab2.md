@@ -68,7 +68,7 @@ cd ~/csci_420_robotics_docker  # edit the location if you did not clone the repo
 # Connect to the Docker container
 docker compose exec ros bash
 # Change to lab directory
-cd ~/csci_420_robotics_labs/
+cd ~/csci_420_robotics_labs_f26/
 # Pull to update the code
 git pull
 ```
@@ -110,11 +110,11 @@ Let's get the ROS package with git and build our workspace. To do that run the f
 
 ```bash
 # Go into the source folder of our workspace
-cd ~/csci_420_robotics_labs/lab2_ws/lab2_p1_ws/src
+cd ~/csci_420_robotics_labs_f26/lab2_ws/lab2_p1_ws/src
 # Clone the keyboard package
 git clone https://github.com/cmower/ros2-keyboard
 # Go back to the main directory
-cd ~/csci_420_robotics_labs/lab2_ws/lab2_p1_ws/
+cd ~/csci_420_robotics_labs_f26/lab2_ws/lab2_p1_ws/
 # Build the colcon workspace
 colcon build
 ```
@@ -158,7 +158,7 @@ cd ~/csci_420_robotics_docker  # edit the location if you did not clone the repo
 # Connect to the Docker container
 docker compose exec ros bash
 # Source the ROS setup. This sets up your terminal environment to be ready to run ROS commands
-source ~/csci_420_robotics_labs/lab2_ws/lab2_p1_ws/install/setup.bash
+source ~/csci_420_robotics_labs_f26/lab2_ws/lab2_p1_ws/install/setup.bash
 # Run the keyboard source code
 ros2 run keyboard keyboard
 ```
@@ -171,7 +171,7 @@ cd ~/csci_420_robotics_docker  # edit the location if you did not clone the repo
 # Connect to the Docker container
 docker compose exec ros bash
 # Source the ROS setup. This sets up your terminal environment to be ready to run ROS commands
-source ~/csci_420_robotics_labs/lab2_ws/lab2_p1_ws/install/setup.bash
+source ~/csci_420_robotics_labs_f26/lab2_ws/lab2_p1_ws/install/setup.bash
 # Retrieve information from `/keydown` topic
 ros2 topic echo /keydown
 ```
@@ -203,9 +203,9 @@ What did we just do? Well, we clicked a key on our keyboard, the ROS node keyboa
 
 Now that we have figured out how the keyboard node works, close it so we can develop a keyboard manager. **Close terminal 2** Note: closing the GUI for the keyboard node won't kill its process, and thus the GUI will just reappear. To terminate the process, press `CTRL+C` in that terminal.
 
-The keyboard manager's job will be to take the information provided by the keyboard node, interpret it, and then publish appropriate control messages to the rocket (for instance, `/abort_takeoff`). In our case, we want to check if the "**a**" key was pressed and then send an abort message. In your editor, create the following file: `/csci_420_robotics_labs/lab2_ws/lab2_p1_ws/src/rocketship/src/keyboard_manager.py`
+The keyboard manager's job will be to take the information provided by the keyboard node, interpret it, and then publish appropriate control messages to the rocket (for instance, `/abort_takeoff`). In our case, we want to check if the "**a**" key was pressed and then send an abort message. In your editor, create the following file: `/csci_420_robotics_labs_f26/lab2_ws/lab2_p1_ws/src/rocketship/src/keyboard_manager.py`
 
-Next, add the following lines in `/root/csci_420_robotics_labs/lab2_ws/lab2_p1_ws/src/rocketship/CMakeLists.txt` above `ament_package()` at the end.
+Next, add the following lines in `/root/csci_420_robotics_labs_f26/lab2_ws/lab2_p1_ws/src/rocketship/CMakeLists.txt` above `ament_package()` at the end.
 
 ```
 install(PROGRAMS
@@ -438,7 +438,7 @@ Now that we have created the node, we need to test if it works. Let's test if wh
 ```bash
 cd ~/csci_420_robotics_docker  # edit the location if you did not clone the repository to ~ during Docker Setup
 docker compose exec ros bash
-cd ~/csci_420_robotics_labs/lab2_ws/lab2_p1_ws/
+cd ~/csci_420_robotics_labs_f26/lab2_ws/lab2_p1_ws/
 colcon build
 source install/setup.bash
 ros2 run keyboard keyboard
@@ -448,7 +448,7 @@ ros2 run keyboard keyboard
 ```bash
 cd ~/csci_420_robotics_docker  # edit the location if you did not clone the repository to ~ during Docker Setup
 docker compose exec ros bash
-source ~/csci_420_robotics_labs/lab2_ws/lab2_p1_ws/install/setup.bash
+source ~/csci_420_robotics_labs_f26/lab2_ws/lab2_p1_ws/install/setup.bash
 ros2 run rocketship keyboard_manager.py
 ```
 
@@ -456,7 +456,7 @@ ros2 run rocketship keyboard_manager.py
 ```bash
 cd ~/csci_420_robotics_docker  # edit the location if you did not clone the repository to ~ during Docker Setup
 docker compose exec ros bash
-source ~/csci_420_robotics_labs/lab2_ws/lab2_p1_ws/install/setup.bash
+source ~/csci_420_robotics_labs_f26/lab2_ws/lab2_p1_ws/install/setup.bash
 ros2 topic echo /abort_takeoff
 ```
 
@@ -537,18 +537,18 @@ Before we launch the simulator, we need to build the workspace that contains the
 ```bash
 cd ~/csci_420_robotics_docker  # edit the location if you did not clone the repository to ~ during Docker Setup
 docker compose exec ros bash
-cd ~/csci_420_robotics_labs/lab2_ws/lab2_p2_ws
+cd ~/csci_420_robotics_labs_f26/lab2_ws/lab2_p2_ws
 colcon build
 ```
 
 If everything builds successfully, you can launch the simulator by running the following command in Terminal 1.
 
 ```
-source ~/csci_420_robotics_labs/lab2_ws/lab2_p2_ws/install/setup.bash
+source ~/csci_420_robotics_labs_f26/lab2_ws/lab2_p2_ws/install/setup.bash
 ros2 launch flightcontroller fly.launch
 ```
 
-You will notice we use a launch file to run the simulator. By now, you should start to understand how important launch files are. Take a minute and look at the launch file and try to determine what nodes are being launched. The launch file is located in `~/csci_420_robotics_labs/lab2_ws/lab2_p2_ws/src/flightcontroller/launch/fly.launch`.
+You will notice we use a launch file to run the simulator. By now, you should start to understand how important launch files are. Take a minute and look at the launch file and try to determine what nodes are being launched. The launch file is located in `~/csci_420_robotics_labs_f26/lab2_ws/lab2_p2_ws/src/flightcontroller/launch/fly.launch`.
 
 Once it is launched, you will see something like the image below in your VNC browser (if not already open, click [here](http://localhost:8080/vnc.html) and connect). The green dot represents the center of the drone, while the blue and red lines represent the arms of the drone.
 
@@ -576,7 +576,7 @@ Now let's try to fly the drone. We will be using a very similar process to that 
 cd ~/csci_420_robotics_docker  # edit the location if you did not clone the repository to ~ during Docker Setup
 # Connect to the Docker container
 docker compose exec ros bash
-source ~/csci_420_robotics_labs/lab2_ws/lab2_p2_ws/install/setup.bash
+source ~/csci_420_robotics_labs_f26/lab2_ws/lab2_p2_ws/install/setup.bash
 ros2 topic list
 ```
 
@@ -631,7 +631,7 @@ docker compose exec ros bash
 Now, similar to the beginning of this lab, download the keyboard package into your current workspace. To do this, enter the following into Terminal 1:
 ```bash
 # Go into the source folder of our workspace
-cd ~/csci_420_robotics_labs/lab2_ws/lab2_p2_ws/src
+cd ~/csci_420_robotics_labs_f26/lab2_ws/lab2_p2_ws/src
 # Clone the keyboard package
 git clone https://github.com/cmower/ros2-keyboard
 ```
@@ -640,7 +640,7 @@ Once you have downloaded the keyboard package, make sure your workspace builds b
 
 ```bash
 # Go back to the main directory
-cd ~/csci_420_robotics_labs/lab2_ws/lab2_p2_ws/
+cd ~/csci_420_robotics_labs_f26/lab2_ws/lab2_p2_ws/
 # Build the workspace
 colcon build
 ```
@@ -649,7 +649,7 @@ Earlier, we learned that the quadrotor could be controlled using the `/uav/input
 
 ```bash
 # Go into the source folder of our workspace
-cd ~/csci_420_robotics_labs/lab2_ws/lab2_p2_ws/src
+cd ~/csci_420_robotics_labs_f26/lab2_ws/lab2_p2_ws/src
 # Create a new package
 ros2 pkg create --build-type ament_python --node-name keyboard_manager simple_control
 chown -R 1000:1000 ./simple_control
@@ -657,7 +657,7 @@ chown -R 1000:1000 ./simple_control
 
 The first command creates a new ROS 2 Python package named `simple_control`. The `--node-name keyboard_manager` option also creates a starter Python node named `keyboard_manager` inside the package. The package and node are located at:
 
-`~/csci_420_robotics_labs/lab2_ws/lab2_p2_ws/src/simple_control/simple_control/keyboard_manager.py`
+`~/csci_420_robotics_labs_f26/lab2_ws/lab2_p2_ws/src/simple_control/simple_control/keyboard_manager.py`
 
 Since we are creating these files from inside the Docker container, they may initially be owned by the container's `root` user. The `chown` command changes ownership of the new package and everything inside it to user and group `1000:1000`, which corresponds to the normal user in this environment and prevents permission issues when editing the files.
 
@@ -732,7 +732,7 @@ Hint: It might be easier to launch the simulation, keyboard, and keyboard_manage
 
 Note: Make sure that you click on the keyboard listener window in the VNC browser when attempting to control the drone. Second, since the keyboard listener only reports `keydown` once per keypress, holding down the arrow keys will not move the drone multiple times (in this implementation). To move multiple times in a single direction, you will need to press the same arrow key multiple times.
 
-Finally, once you are done testing the basic functionality, add these lines to the end of the launch file (`~/csci_420_robotics_labs/lab2_ws/lab2_p2_ws/src/flightcontroller/launch/fly.launch`) so that you can run the code using a single command. After adding the two new lines, the launch file should look something like this:
+Finally, once you are done testing the basic functionality, add these lines to the end of the launch file (`~/csci_420_robotics_labs_f26/lab2_ws/lab2_p2_ws/src/flightcontroller/launch/fly.launch`) so that you can run the code using a single command. After adding the two new lines, the launch file should look something like this:
 
 ```xml
 <?xml version="1.0"?>
