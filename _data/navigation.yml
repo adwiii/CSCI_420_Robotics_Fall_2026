@@ -9,6 +9,8 @@
       link: /lectures/lecture3/
     - name: 3 (mini) - State Machines for Robots
       link: /lectures/lecture3mini/
+    - name: 4 - Sensors & Noise Management
+      link: /lectures/lecture4/
 - name: Labs
   link: /#
   dropdown:
