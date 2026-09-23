@@ -11,6 +11,8 @@
       link: /lectures/lecture3mini/
     - name: 4 - Sensors & Noise Management
       link: /lectures/lecture4/
+    - name: 5 - LLMs in Robotics
+      link: /lectures/lecture5/
 - name: Labs
   link: /#
   dropdown:
