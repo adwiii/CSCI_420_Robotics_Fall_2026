@@ -69,7 +69,7 @@ The first step in improving the drone's control software will be to create the n
 To start pull the latest code ***inside of a new Docker terminal***.
 ```bash
 # Change to lab directory
-cd ~/csci_420_robotics_labs/
+cd ~/csci_420_robotics_labs_f26/
 # Clone the code
 git pull
 ```
@@ -78,7 +78,7 @@ You should see a new workspace `lab3_ws`. This workspace will have the keyboard 
 
 To track the drone's mission state, we are going to need to create a new node in the `simple_control` package. Create a new node in the `simple_control` package in the `lab3_ws` workspace called `geofence_and_mission.py`.
 
-Once you've created the new node, you must update the `~/csci_420_robotics_labs/lab3_ws/src/simple_control/setup.py` file to tell ROS to include the new node in the build. Find the dictionary of entry points and edit it as shown below:
+Once you've created the new node, you must update the `~/csci_420_robotics_labs_f26/lab3_ws/src/simple_control/setup.py` file to tell ROS to include the new node in the build. Find the dictionary of entry points and edit it as shown below:
 
 Old:
 ```python3
@@ -476,7 +476,7 @@ if __name__ == '__main__':
 
 ## Putting it All Together
 
-The last thing we need to do is to change our launch file so that we can run each of the nodes. To do that, add each node to the roslaunch file. The launch file is located in: `~/csci_420_robotics_labs/lab3_ws/src/flightcontroller/launch/fly.launch`
+The last thing we need to do is to change our launch file so that we can run each of the nodes. To do that, add each node to the roslaunch file. The launch file is located in: `~/csci_420_robotics_labs_f26/lab3_ws/src/flightcontroller/launch/fly.launch`
 
 ```xml
 ...
@@ -751,7 +751,7 @@ Let's spend some time understanding how this code works.
 
 First, we changed the acceptance range to be queried from the parameter server. We also give this parameter a default value of 0.5 (in case the parameter can not be found). Next, when we look at the geofence, we see that it has 3 separate parameters, one for each dimension. These values are then used to create the geofence variables that describe the acceptable area.
 
-Recall that  such values are set in the launch file. To set the parameters in the launch file (`~/csci_420_robotics_labs/lab3_ws/src/flightcontroller/launch/fly.launch`) change it as follows:
+Recall that  such values are set in the launch file. To set the parameters in the launch file (`~/csci_420_robotics_labs_f26/lab3_ws/src/flightcontroller/launch/fly.launch`) change it as follows:
 
 ```xml
         <node name="geofence_and_mission_node" pkg="simple_control" exec="geofence_and_mission" output="screen">
@@ -877,7 +877,7 @@ We then need to add the additional package dependencies to the `sensor_simulatio
 Let's now check if we have done everything correctly. It is always a **good idea to break long processes like this into smaller steps** to allow you to identify early on if you have made a mistake. Let's compile the workspace and check if we can validate that the service call definition exists. To do this run:
 
 ```bash
-cd ~/csci_420_robotics_labs/lab3_ws/
+cd ~/csci_420_robotics_labs_f26/lab3_ws/
 colcon build
 source install/setup.bash
 ros2 interface show sensor_simulation/srv/Calibrate
@@ -961,14 +961,14 @@ We can see that everything is as expected. We can see the Node which provides th
 ### Terminal 1
 
 ```bash
-source ~/csci_420_robotics_labs/lab3_ws/install/setup.bash
+source ~/csci_420_robotics_labs_f26/lab3_ws/install/setup.bash
 ros2 launch flightcontroller fly.launch
 ```
 
 ### Terminal 2
 
 ```bash
-source ~/csci_420_robotics_labs/lab3_ws/install/setup.bash
+source ~/csci_420_robotics_labs_f26/lab3_ws/install/setup.bash
 ros2 topic echo /uav/sensors/pressure
 ```
 
@@ -985,7 +985,7 @@ Expected output:
 ### Terminal 3
 
 ```bash
-source ~/csci_420_robotics_labs/lab3_ws/install/setup.bash
+source ~/csci_420_robotics_labs_f26/lab3_ws/install/setup.bash
 ros2 service call /calibrate_pressure sensor_simulation/srv/Calibrate "{zero: True}"
 ```
 
@@ -1092,7 +1092,7 @@ Delete the `setup.cfg` and `setup.py` files. In the `flightcontroller/launch/fly
 Rename the `simple_control/simple_control` folder to `simple_control/src`.
 
 ```bash
-cd ~/csci_420_robotics_labs/lab3_ws/src/simple_control/
+cd ~/csci_420_robotics_labs_f26/lab3_ws/src/simple_control/
 mv ./simple_control ./src
 ```
 
