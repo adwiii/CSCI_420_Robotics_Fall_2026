@@ -13,6 +13,8 @@
       link: /lectures/lecture4/
     - name: 5 - LLMs in Robotics
       link: /lectures/lecture5/
+    - name: 6 - Perception
+      link: /lectures/lecture6/
 - name: Labs
   link: /#
   dropdown:
