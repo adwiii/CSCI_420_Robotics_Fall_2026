@@ -27,7 +27,7 @@ At the end of this lab, you should understand:
 * How to connect the current state of the art to possible future scenarios and their implications.
 * How to participate in debating ethical questions in a respectful and productive way.
 
-{% include notification.html message="Submission: The checkpoints are handled a little differently for this lab. The first checkpoint will consist of a  written document that must be submitted via Blackboard before class on October 22nd. The second checkpoint is the in-class debate on October 22nd."
+{% include notification.html message="Submission: The checkpoints are handled a little differently for this lab. The first checkpoint will consist of a  written document that must be submitted via Blackboard before class on November 5th. The second checkpoint is the in-class debate on November 5th."
 status="is-success"
 icon="fas fa-exclamation-triangle" %}
 
@@ -55,7 +55,7 @@ The prompts to choose from are:
 [//]: # (1. Should [moral machines]&#40;https://www.media.mit.edu/publications/moral-machine-perception-of-moral-judgment-made-by-machines/&#41; drive the analysis of risk when human life is involved?)
 1. Should [sentient robots](https://www.nbcnews.com/mach/tech/what-rise-sentient-robots-will-mean-human-beings-ncna773146) have the same rights as humans? Consider both legal rights and social treatment.
 2. Should a [caretaking/personal assistant robot](https://ieeexplore.ieee.org/abstract/document/5980058?casa_token=V_F525cBorwAAAAA:3_PgIxa4xJ2ne9vSWF_hKAGK6s7JrADljtNiuG42-5ZjcNPGjiZYGvAmDMk3YlOxgMha85uv) have control over the daily activities of their human (food, medicine, exercise, bedtime/waking time, etc.)? Consider both minor decisions up to power of attorney.
-3. Should [law enforcement agencies use robots](https://builtin.com/robotics/police-robot-law-enforcement) to uphold the law? Consider all aspects from intervention, to detective work, to apprehension.
+3. Should [law enforcement agencies use robots](https://builtin.com/robotics/police-robot-law-enforcement) to uphold the law? Consider all aspects from intervention, to detective work, to apprehension. _Military application is beyond the scope of this question._
 
 [//]: # (5. Should the [right to repair]&#40;https://www.nytimes.com/2020/10/23/climate/right-to-repair.html&#41; be available to everyone who owns a robot?)
 
@@ -125,7 +125,7 @@ In this outline, organize your arguments to address (at least) the following que
 
 Include a list of references at the end in a standard reference format. This must include the title of the reference, the authors, the publisher, and a link to the source.
 
-**This checkpoint must be submitted through Blackboard before the in-lab debate (October 22, 2025).** Part of the grade for this lab is based on how well you've prepared. The writeup will form 60% of the lab grade.
+**This checkpoint must be submitted through Blackboard before the in-lab debate (November 5, 2026).** Part of the grade for this lab is based on how well you've prepared. The writeup will form 60% of the lab grade.
 
 
 ## Part 2: Debate
