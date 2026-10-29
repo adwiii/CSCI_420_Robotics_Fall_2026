@@ -1,0 +1,14 @@
+---
+title: Lecture 9 - Graph Navigation
+subtitle: Posted 10/18
+layout: page
+
+---
+
+## Lecture Slides: [download](../CSCI_420_Planning_2.pdf)
+
+<figure class="image is-16by9">
+    <iframe class="has-ratio" frameborder="0" scrolling="yes" width="640" height="360"
+        src="../CSCI_420_Planning_2.pdf">
+    </iframe>
+</figure>

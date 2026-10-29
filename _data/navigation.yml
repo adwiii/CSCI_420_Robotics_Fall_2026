@@ -19,6 +19,8 @@
       link: /lectures/lecture7/
     - name: 8 - Planning
       link: /lectures/lecture8/
+    - name: 9 - Graph Planning
+      link: /lectures/lecture9/
 - name: Labs
   link: /#
   dropdown:
@@ -34,3 +36,5 @@
       link: /labs/lab5/
     - name: E - Ethics
       link: /labs/labE/
+    - name: 6 - Graph Navigation
+      link: /labs/lab6/

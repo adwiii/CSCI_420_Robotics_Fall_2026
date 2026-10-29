@@ -1,5 +1,5 @@
 ---
-title: Lecture 7 - Planning
+title: Lecture 8 - Planning
 subtitle: Posted 10/18
 layout: page
 

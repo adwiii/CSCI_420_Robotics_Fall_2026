@@ -40,7 +40,7 @@ By the end of the course, students will be able to:
 
 # Office Hours
 
-* Trey Woodlief: Mondays 2-4pm, Wednesdays 10am-12pm, ISC 2317. Online meetings or other times available by appointment. 
+* Trey Woodlief: Mondays 2-4pm, Wednesdays 9-10am & 11-12pm, ISC 2317. Online meetings or other times available by appointment. 
 * Yili Bai: Tuesdays 12:30-1:30pm, ISC 2398
 
 # Prerequisites
@@ -61,7 +61,7 @@ CSCI 303 and/or CSCI 304 are recommended. Robotics lives at the intersection of 
 | 7    | 10/6/2026    | [Abstractions & Perception](./lectures/lecture6)           | 5      | Sensors & Noise              | 10/8/2026                                |       | _(No Class; Fall Break)_                                                       |
 | 8    | 10/13/2026   | [Controlling your Robot](./lectures/lecture7)              | 6      | Perceptions & Abstraction    | 10/15/2026                               |       | ***Midterm Exam*** <br> _Room 2359_                                            |
 | 9    | 10/20/2026   | [Tradeoffs in Planning](./lectures/lecture8)               | 7      | Controls I (Moved to 10/27)  | 10/22/2026                               | 5     | [Perception](./labs/lab5)                                                      |
-| 10   | 10/27/2026   | Graph Navigation                                           | 8      | Planning (Moved to 10/29)    | 10/29/2026                               | 7     | Planning                                                                       |
+| 10   | 10/27/2026   | [Graph Navigation](./lectures/lecture9)                    | 8      | Planning (Moved to 10/29)    | 10/29/2026                               | 7     | [Planning](./labs/lab6)                                                        |
 | 11   | 11/3/2026    | _(No Class; Election Day)_                                 |        |                              | 11/5/2026                                | 6     | ⭐ [Ethics _(Interactive Lab)_](./labs/labE/)                                  |
 | 12   | 11/10/2026   | Coordinates & Transformations                              | 9      | Graph Navigation             | 11/12/2026                               | 8     | Pose Transformations                                                           |
 | 13   | 11/17/2026   | Specs, V&V, Safety                                         | 10     | Coordinate Transforms        | 11/19/2026                               | 9     | ⭐ Specifying Robots _(Interactive Lab)_                                       |
