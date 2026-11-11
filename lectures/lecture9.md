@@ -1,6 +1,6 @@
 ---
 title: Lecture 9 - Graph Navigation
-subtitle: Posted 10/18
+subtitle: Posted 10/28
 layout: page
 
 ---

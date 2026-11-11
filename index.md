@@ -63,11 +63,11 @@ CSCI 303 and/or CSCI 304 are recommended. Robotics lives at the intersection of 
 | 9    | 10/20/2026   | [Tradeoffs in Planning](./lectures/lecture8)               | 7      | Controls I (Moved to 10/27)  | 10/22/2026                               | 5     | [Perception](./labs/lab5)                                                      |
 | 10   | 10/27/2026   | [Graph Navigation](./lectures/lecture9)                    | 8      | Planning (Moved to 10/29)    | 10/29/2026                               | 7     | [Planning](./labs/lab6)                                                        |
 | 11   | 11/3/2026    | _(No Class; Election Day)_                                 |        |                              | 11/5/2026                                | 6     | ⭐ [Ethics _(Interactive Lab)_](./labs/labE/)                                  |
-| 12   | 11/10/2026   | Coordinates & Transformations                              | 9      | Graph Navigation             | 11/12/2026                               | 8     | Pose Transformations                                                           |
+| 12   | 11/10/2026   | [Coordinates & Transformations](./lectures/lecture10)      | 9      | Graph Navigation             | 11/12/2026                               | 8     | [Pose Transformations](./labs/lab7)                                          |
 | 13   | 11/17/2026   | Specs, V&V, Safety                                         | 10     | Coordinate Transforms        | 11/19/2026                               | 9     | ⭐ Specifying Robots _(Interactive Lab)_                                       |
 | 14   | 11/24/2026   | Project Work (Remote Office Hours)                         |        |                              | 11/26/2026                               |       | _(No Class; Thanksgiving Break)_                                               |
 | 15   | 12/1/2026    | Robot Design                                               | 11     | TBD                          | 12/3/2026                                |       | Wrap up & exam/project prep                                                    |
-| 16   | 12/7/2026    | ***Final Exam*** 2pm-5pm, location TBD                     |        |                              | Congrats on completing another semester! |
+| 16   | 12/7/2026    | ***Final Exam*** 2pm-5pm, location TBD                     |        |                              | Congrats on completing another semester! |       |                                                                                |
 
 ## Important Dates:
 

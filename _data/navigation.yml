@@ -21,6 +21,8 @@
       link: /lectures/lecture8/
     - name: 9 - Graph Planning
       link: /lectures/lecture9/
+    - name: 10 - Coordinates & Transforms
+      link: /lectures/lecture10/
 - name: Labs
   link: /#
   dropdown:
@@ -38,3 +40,5 @@
       link: /labs/labE/
     - name: 6 - Graph Navigation
       link: /labs/lab6/
+    - name: 7 -
+      link: /labs/lab7/
