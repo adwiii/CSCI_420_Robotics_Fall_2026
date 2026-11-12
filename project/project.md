@@ -17,7 +17,7 @@ During the course of the semester, we have learned about different aspects of bu
  * Mapping and motion Planning
  * Transforming coordinate frames
 
-We will use many of these skills to develop a robot system ***in teams of up to 2 people*** that is capable of performing a complex task autonomously.
+We will use many of these skills to develop a robot system ***in teams of up to 3 people*** that is capable of performing a complex task autonomously.
 
 # Motivation
 Robots are well suited for many jobs that may not be a good fit for humans.
@@ -63,11 +63,11 @@ message="At the end of the project, you will submit a zipped copy of your `simpl
 icon="false"
 status="is-primary" %}
 
-The project builds off of the previous labs, but leaves much more room for you to implement and make your own design decisions. Instead of providing partial source code with labelled TODOs, we outline the data available to you and loosely describe where you should implement the remaining portions of the project. 
+The project builds off of the previous labs, but leaves much more room for you to implement and make your own design decisions. Instead of providing partial source code with labeled TODOs, we outline the data available to you and loosely describe where you should implement the remaining portions of the project. 
 
 To retrieve the new code base for the final project, run:
 ```bash
-cd ~/csci_420_robotics_labs
+cd ~/csci_420_robotics_labs_f26
 git pull
 ```
 
@@ -147,7 +147,7 @@ During grading, you must show your implementation working on at least a 23 by 23
 **Your solution should make no assumptions about the map size or obstacle placement. During grading, the teaching staff will run your solution on many different map configurations and seeds**.
 
 # Tips to get started
-Your final solution will give you a taste of what implementing a full complex solution to a real world problem would entail. The complexity introduced by multiple people working on different parts of the solution, the different parts of the solutions having different and unique functions, as well as integrating many different pieces of software all make the complexity of the problem an increasing difficult challenge.
+Your final solution will give you a taste of what implementing a full complex solution to a real world problem would entail. The complexity introduced by multiple people working on different parts of the solution, the different parts of the solutions having different and unique functions, as well as integrating many different pieces of software all make the complexity of the problem an increasingly difficult challenge.
 
 ## Control States
 
@@ -310,6 +310,16 @@ Teaching staff solution runtime: 245.543 seconds
     </div>
 </div>
 
+## An easier setting for debugging and partial credit
+
+There is an additional parameter that will disable the doors so that they start already open on the map. This will allow your drone to traverse the map without having to stop to open the door.
+setting this to `true` can be useful to debug other parts of your solution separate from door identification logic. For grading, projects will be first evaluated with this set to `false`. If the code does not successfully complete, the code will be rerun with the doors disabled (`true`) and re-evaluated with a 50% deduction for functional correctness (see below).
+
+```
+<arg name="disable_doors" default="false" />
+```
+
+
 # Project Evaluation
 Your project will be evaluated on its ability to meet the following requirements. 
 
@@ -317,21 +327,28 @@ Your project will be evaluated on its ability to meet the following requirements
  2. The drone must reach the dog's location (*Automatically detected*)
  3. The drone must report the **shortest path** between its starting location and the dog once found (*Automatically detected*)
 
-There are two milestones for the project: an in class demo and a final code submission.
-In class demos of the checkpoints will be held on ***Wednesday, December 3rd***. Late submissions of vidoes of the demo will be deducted 10% per day late. Videos can be submitted through Blackboard. The video must clearly show the door opening for Checkpoint 1, and the Occupancy grid for the initial position for Checkpoint 2.
-The final code submission of your zipped `simple_control` package is due ***Monday, December 8th at NOON*** through Blackboard. Only one team member needs to submit. Make sure that both team members' names are in the `simple_control.launch` file.
-Late submissions will be deducted 10% per day late for the final submission until 12/16.
+There are two milestones for the project: a demo to the teaching staff and a final code submission.
+Demos of the checkpoints will be held on ***Thursday, December 3rd***. Late submissions of videos of the demo will be deducted 5% per day late. Videos can be submitted through Blackboard. The video must clearly show the door opening for Checkpoint 1, and the Occupancy grid for the initial position for Checkpoint 2.
+The final code submission of your zipped `simple_control` package is due ***Monday, December 7th at 2pm*** through Blackboard (the beginning of the final exam period). Only one team member needs to submit. Make sure that all team members' names are in the `simple_control.launch` file.
+Late submissions will be deducted 5% per day late for the final submission until 12/15.
  
-**The final project is worth 20% of your class grade.** The grading breakdown is:
-* 8 points for the in-class demo
-  * The in-class demonstration must show the drone completing two of the subtasks (4 points each): opening a door and generating the map.
+**The final is worth 35% of your class grade. There are two components: the exam and the project, with the one you do better on accounting for 25% and the other 10%.** The grading breakdown is (out of 100% for the project):
+* 40% for the checkpoint demo
+  * The demo must show the drone completing two of the subtasks (20% each): opening a door and generating the map.
     * For opening the door, you may use one of the seeds above where the drone starts adjacent to the door. Show that your drone can open that door. For the final submission your drone must be able to automatically detect and open doors; however, for this demonstration, the location of the door can be hard-coded.
     * For generating the map, show that your solution can build an initial occupancy grid showing the status of the location around the starting position; the drone does not have to move. For example, in the GIF shown in example 2, the drone starts up and identifies the area around the start before it begins moving.
     * While we will aim for live demos, you should come prepared with a video recording as well.
-* 12 points for the code and video submission through Blackboard
-  * Submit a video of the drone completing 3 different scenarios of size 23x23 that are not shown above.
-  * The code submission will be graded against a suite of scenarios that the teaching staff choose, each of which must pass.
-* 1 Extra Credit point for the fastest solution time in the class on a hidden map chosen by the teaching staff
+* 60% for the code and video submissions through Blackboard
+  * Functional Correctness:
+    * (20%) Submit a video of the drone completing 3 different scenarios of size 23x23 that are not shown above.
+    * (20%) The code submission will be graded against a suite of scenarios that the teaching staff choose, each of which must pass.
+    * Your code must be able to open all doors for full credit. Code that works without opening the doors (`<arg name="disable_doors" default="true" />`) will receive half credit.
+  * (20%) Explaining your solution 
+    * Submit a 5-10 minute video explaining your code. Discuss how you implemented the different aspects of the problem including your state machine or other internal planning logic, map generation, door detection, door opening, and navigation planning.
+    * All team members must present a roughly equal portion of the code. The goal is to demonstrate that not only do you have a working solution, but you understand your solution sufficiently to explain it to someone else. 
+    * The 20% of this section is contingent based on the functional performance of the code. For example, if your solution receives only half credit for the functional correctness, your video will receive at most half credit. 
+    * If you upload your explanation video by 2pm on December 7th, teaching staff will review by 9am Wednesday, December 9th to confirm whether the video has given sufficient detail. If needed, the video can be re-submitted until 9am Wednesday, December 16th with no penalty. 
+* 5% Extra Credit for the fastest solution time in the class on a hidden map chosen by the teaching staff. The solution must open the doors to be eligible.
 
 {% include notification.html
 message="We understand that the final weeks of the semester are always a stressful time. If you have any questions or concerns, please reach out to the teaching staff."
