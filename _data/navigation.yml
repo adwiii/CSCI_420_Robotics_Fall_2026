@@ -23,6 +23,8 @@
       link: /lectures/lecture9/
     - name: 10 - Coordinates & Transforms
       link: /lectures/lecture10/
+    - name: 11 - Specifications & Safety
+      link: /lectures/lecture11/
 - name: Labs
   link: /#
   dropdown:
