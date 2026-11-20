@@ -66,7 +66,7 @@ CSCI 303 and/or CSCI 304 are recommended. Robotics lives at the intersection of 
 | 12   | 11/10/2026   | [Coordinates & Transformations](./lectures/lecture10)      | 9      | Graph Navigation             | 11/12/2026                               | 8     | [Pose Transformations](./labs/lab7)                                          |
 | 13   | 11/17/2026   | [Specs, V&V, Safety](./lectures/lecture11)                                | 10     | Coordinate Transforms (Moved to 11/19)        | 11/19/2026                               | 9     | ⭐ Specifying Robots _(Interactive Lab)_                                       |
 | 14   | 11/24/2026   | Project Work (Remote Office Hours)                         |        |                              | 11/26/2026                               |       | _(No Class; Thanksgiving Break)_                                               |
-| 15   | 12/1/2026    | Robot Design                                               | 11     | TBD                          | 12/3/2026                                |       | Wrap up & exam/project prep                                                    |
+| 15   | 12/1/2026    | Robot Design                                               | 11     | Specs & Safety                          | 12/3/2026                                |       | Wrap up & exam/project prep                                                    |
 | 16   | 12/7/2026    | ***Final Exam*** 2pm-5pm, location TBD                     |        |                              | Congrats on completing another semester! |       |                                                                                |
 
 ## Important Dates:
